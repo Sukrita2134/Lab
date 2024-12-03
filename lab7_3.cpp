@@ -1,8 +1,14 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-char before(char x){
-	//Write your function definition here
+char before(char ch) {
+    if (ch >= 'A' && ch <= 'Z') {
+        if (ch == 'A') {
+            return 'Z';
+        }
+        return ch - 1;
+    }
+    return '0';
 }
 
 int main(){
